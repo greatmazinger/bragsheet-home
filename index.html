@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Athena Lexi Studios</title>
-<meta name="description" content="Athena Lexi Studios builds AI-assisted apps for the education community — practical tools grounded in real classroom and counseling needs.">
+<meta name="description" content="Athena Lexi Studios builds AI-assisted apps for the education community - practical tools grounded in real classroom and counseling needs.">
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -16,21 +16,19 @@
   }
 
   nav {
-    background: #1A2744;
+    background: #ffffff;
     padding: 0 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 60px;
+    height: 70px;
+    border-bottom: 1px solid #e0ddd6;
   }
 
-  .nav-logo {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    color: #F7F5F0;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+  .nav-logo img {
+    height: 48px;
+    width: auto;
+    display: block;
   }
 
   .nav-links {
@@ -42,13 +40,13 @@
   .nav-links a {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-size: 13px;
-    color: #B8C4D8;
+    color: #4a5568;
     text-decoration: none;
     letter-spacing: 0.03em;
   }
 
   .nav-links a:hover {
-    color: #F7F5F0;
+    color: #1A2744;
   }
 
   .hero {
@@ -117,7 +115,6 @@
     margin: 0;
   }
 
-  /* Apps Section */
   .apps-section {
     background: #fff;
     padding: 4rem 2rem;
@@ -165,24 +162,17 @@
   }
 
   .app-icon {
-    width: 56px;
-    height: 56px;
-    border-radius: 12px;
-    background: #1A2744;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 14px;
+    overflow: hidden;
     flex-shrink: 0;
   }
 
-  .app-icon svg {
-    width: 28px;
-    height: 28px;
-    fill: none;
-    stroke: #C9A84C;
-    stroke-width: 1.5;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+  .app-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .app-tag {
@@ -209,7 +199,6 @@
     line-height: 1.65;
   }
 
-  /* About Section */
   .about-section {
     padding: 4rem 2rem;
     max-width: 800px;
@@ -260,7 +249,6 @@
     margin: 0;
   }
 
-  /* Contact Section */
   .contact-section {
     background: #1A2744;
     padding: 3.5rem 2rem;
@@ -294,7 +282,6 @@
     border-bottom-color: #C9A84C;
   }
 
-  /* Footer */
   footer {
     background: #111827;
     padding: 1.5rem 2rem;
@@ -327,7 +314,6 @@
     color: #9CA3AF;
   }
 
-  /* Responsive */
   @media (max-width: 600px) {
     .hero-text h1 { font-size: 1.9rem; }
     .app-card { flex-direction: column; }
@@ -340,7 +326,9 @@
 <body>
 
 <nav>
-  <div class="nav-logo">Athena Lexi Studios</div>
+  <div class="nav-logo">
+    <a href="index.html"><img src="Athena_Lexi_Studios_logo.png" alt="Athena Lexi Studios"></a>
+  </div>
   <ul class="nav-links">
     <li><a href="#apps">Apps</a></li>
     <li><a href="#about">About</a></li>
@@ -353,7 +341,7 @@
   <div class="hero-rule"></div>
   <div class="hero-text">
     <h1>Tools that help students and educators <em>do their best work.</em></h1>
-    <p>Athena Lexi Studios builds AI-assisted apps for the education community — practical tools grounded in real classroom and counseling needs.</p>
+    <p>Athena Lexi Studios builds AI-assisted apps for the education community - practical tools grounded in real classroom and counseling needs.</p>
     <div class="hero-badge">
       <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <circle cx="6" cy="6" r="5" stroke="#C9A84C" stroke-width="1.5"/>
@@ -371,18 +359,16 @@
   <div class="apps-inner">
     <div class="section-label">Our Apps</div>
     <h2>Built for real workflows in education.</h2>
-    <p>Each tool we build starts with a problem we've seen firsthand — then we design around the needs of students, counselors, and families.</p>
+    <p>Each tool we build starts with a problem we've seen firsthand, then we design around the needs of students, counselors, and families.</p>
 
     <div class="app-card">
       <div class="app-icon">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M9 12H15M9 16H12M7 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4H17M7 4C7 3.44772 7.44772 3 8 3H16C16.5523 3 17 3.44772 17 4M7 4C7 4.55228 7.44772 5 8 5H16C16.5523 5 17 4.55228 17 4"/>
-        </svg>
+        <img src="icon.png" alt="BragSheet app icon">
       </div>
       <div>
         <div class="app-tag">College Counseling Tool</div>
         <h3>BragSheet</h3>
-        <p>BragSheet gives students a structured way to reflect on their achievements, experiences, and personal qualities — and share that raw material directly with their school counselor. There's no processing or interpretation: what the student writes is what the counselor receives, in the student's own words, ready to inform a recommendation letter that genuinely reflects who they are.</p>
+        <p>BragSheet gives students a structured way to reflect on their achievements, experiences, and personal qualities, and share that raw material directly with their school counselor. There's no processing or interpretation: what the student writes is what the counselor receives, in the student's own words, ready to inform a recommendation letter that genuinely reflects who they are.</p>
         <p style="margin-top: 0.75rem; font-size: 13px; color: #888; font-style: italic;">Coming soon on Android and iOS.</p>
       </div>
     </div>
@@ -395,8 +381,8 @@
   <div class="about-section">
     <div class="section-label">About</div>
     <h2>We build what students and counselors actually need.</h2>
-    <p>Athena Lexi Studios was founded by a husband-and-wife team in the San Francisco Bay Area who watched the college application process up close — and saw how much support was out of reach for families without access to expensive private counselors.</p>
-    <p>Our tools are designed to lower that barrier. We use AI to do the structural and organizational work, so the human voices — students, counselors, families — stay at the center of every outcome.</p>
+    <p>Athena Lexi Studios was founded by a husband-and-wife team in the San Francisco Bay Area who watched the college application process up close, and saw how much support was out of reach for families without access to expensive private counselors.</p>
+    <p>Our tools are designed to lower that barrier. We use AI to do the structural and organizational work, so the human voices - students, counselors, families - stay at the center of every outcome.</p>
     <p>We are a small independent studio. Every tool we ship is something we've used ourselves or built in direct response to a real need we encountered.</p>
 
     <div class="values-grid">
@@ -410,7 +396,7 @@
       </div>
       <div class="value-item">
         <h4>AI that assists, not replaces</h4>
-        <p>We use AI for structure and prompting — the student's and counselor's own words always come first.</p>
+        <p>We use AI for structure and prompting - the student's and counselor's own words always come first.</p>
       </div>
       <div class="value-item">
         <h4>Privacy and trust</h4>
@@ -424,9 +410,26 @@
 
 <section id="contact" class="contact-section">
   <h2>Get in touch</h2>
-  <p>Questions about our apps, partnership inquiries, or school and district licensing — we'd love to hear from you.</p>
-  <a href="mailto:hello@athenalexiventures.com" class="contact-link">hello@athenalexiventures.com</a>
+  <p>Questions about our apps, partnership inquiries, or school and district licensing - we'd love to hear from you.</p>
+  <span class="email-reveal" onmouseenter="revealEmail(this)" ontouchstart="revealEmail(this)"
+    data-user="hello" data-domain="athenalexiventures.com"
+    style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 15px; color: #C9A84C; border-bottom: 1px solid rgba(201,168,76,0.4); padding-bottom: 2px; cursor: pointer;">
+    Hover to reveal email
+  </span>
 </section>
+
+<script>
+function revealEmail(el) {
+  var user = el.getAttribute('data-user');
+  var domain = el.getAttribute('data-domain');
+  var email = user + '@' + domain;
+  var link = document.createElement('a');
+  link.href = 'mailto:' + email;
+  link.textContent = email;
+  link.className = 'contact-link';
+  el.parentNode.replaceChild(link, el);
+}
+</script>
 
 <footer>
   <p>© 2025 Athena Lexi Studios &nbsp;·&nbsp; Athena Lexi Ventures &nbsp;·&nbsp; Bay Area, CA</p>

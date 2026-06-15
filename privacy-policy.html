@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — Athena Lexi Studios</title>
+<title>Privacy Policy - Athena Lexi Studios</title>
 <meta name="description" content="Privacy Policy for Athena Lexi Studios and the BragSheet app.">
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -16,7 +16,7 @@
   }
 
   nav {
-    background: #1A2744;
+    background: #ffffff;
     padding: 0 2rem;
     display: flex;
     align-items: center;
@@ -43,7 +43,7 @@
   .nav-back:hover { color: #F7F5F0; }
 
   .page-header {
-    background: #1A2744;
+    background: #ffffff;
     padding: 3rem 2rem 2.5rem;
     border-top: 1px solid rgba(255,255,255,0.08);
   }
@@ -136,7 +136,7 @@
 <body>
 
 <nav>
-  <a href="index.html" class="nav-logo">Athena Lexi Studios</a>
+  <div class="nav-logo"><a href="index.html"><img src="Athena_Lexi_Studios_logo.png" alt="Athena Lexi Studios"></a></div>
   <a href="index.html" class="nav-back">← Back to home</a>
 </nav>
 
@@ -151,7 +151,7 @@
   <p>Athena Lexi Studios ("we," "our," or "us"), a division of Athena Lexi Ventures, is committed to protecting your privacy. This Privacy Policy explains how the BragSheet app handles information. Please read it carefully.</p>
 
   <h2>1. Information we collect</h2>
-  <p>BragSheet does not collect, transmit, or store any personal information on external servers. All information entered into the app — including student responses, achievements, and profile details — is stored locally on the user's device only.</p>
+  <p>BragSheet does not collect, transmit, or store any personal information on external servers. All information entered into the app - including student responses, achievements, and profile details - is stored locally on the user's device only.</p>
   <p>We do not collect:</p>
   <ul>
     <li>Names, email addresses, or contact information</li>
@@ -165,10 +165,10 @@
   <p>Because all data stays on your device, we do not use, process, sell, or share any personal information. We have no access to what you enter into BragSheet.</p>
 
   <h2>3. Sharing with counselors</h2>
-  <p>BragSheet allows students to share their completed profile with a school counselor. This sharing is initiated entirely by the student and takes place outside the app — for example, by exporting and sending the information via email or another method the student chooses. Athena Lexi Studios is not involved in or party to that transfer in any way.</p>
+  <p>BragSheet allows students to share their completed profile with a school counselor. This sharing is initiated entirely by the student and takes place outside the app - for example, by exporting and sending the information via email or another method the student chooses. Athena Lexi Studios is not involved in or party to that transfer in any way.</p>
 
   <h2>4. Children's privacy</h2>
-  <p>BragSheet is intended for use by high school students in connection with the college application process. Because the app does not collect any personal data from any users — including minors — it complies with the Children's Online Privacy Protection Act (COPPA). We never knowingly collect personal information from children under 13.</p>
+  <p>BragSheet is intended for use by high school students in connection with the college application process. Because the app does not collect any personal data from any users - including minors - it complies with the Children's Online Privacy Protection Act (COPPA). We never knowingly collect personal information from children under 13.</p>
 
   <h2>5. Third-party services</h2>
   <p>BragSheet does not integrate with or send data to any third-party analytics, advertising, or data services.</p>
@@ -181,9 +181,26 @@
 
   <h2>8. Contact us</h2>
   <p>If you have any questions about this Privacy Policy, please contact us at:<br>
-  <a href="mailto:hello@athenalexiventures.com">hello@athenalexiventures.com</a></p>
+  <span class="email-reveal" onmouseenter="revealEmail(this)" ontouchstart="revealEmail(this)"
+    data-user="hello" data-domain="athenalexiventures.com"
+    style="color: #1A2744; border-bottom: 1px solid #aaa; padding-bottom: 1px; cursor: pointer;">
+    Hover to reveal email
+  </span></p>
   <p>Athena Lexi Ventures<br>San Francisco Bay Area, California</p>
 </div>
+
+<script>
+function revealEmail(el) {
+  var user = el.getAttribute('data-user');
+  var domain = el.getAttribute('data-domain');
+  var email = user + '@' + domain;
+  var link = document.createElement('a');
+  link.href = 'mailto:' + email;
+  link.textContent = email;
+  link.style.color = '#1A2744';
+  el.parentNode.replaceChild(link, el);
+}
+</script>
 
 <footer>
   <p>© 2025 Athena Lexi Studios &nbsp;·&nbsp; Athena Lexi Ventures &nbsp;·&nbsp; Bay Area, CA</p>
