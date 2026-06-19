@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data Deletion - BragSheet by Athena Lexi Studios</title>
+<meta name="description" content="How to delete your BragSheet data. BragSheet is published by Athena Lexi Studios.">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #F7F5F0;
+    color: #1C1C1C;
+    line-height: 1.7;
+  }
+
+  nav {
+    background: #ffffff;
+    padding: 0 1rem 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    border-bottom: 1px solid #e0ddd6;
+  }
+
+  .nav-logo img {
+    height: 36px;
+    width: auto;
+    display: block;
+  }
+
+  .nav-back {
+    font-size: 13px;
+    color: #4a5568;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+  }
+
+  .nav-back:hover { color: #1A2744; }
+
+  .page-header {
+    background: #1A2744;
+    padding: 3rem 2rem 2.5rem;
+  }
+
+  .page-header p {
+    font-size: 12px;
+    color: #C9A84C;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+
+  .page-header h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #F7F5F0;
+  }
+
+  .content {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 3rem 2rem 5rem;
+  }
+
+  .subtitle {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #DDD9D0;
+  }
+
+  h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #1A2744;
+    margin: 2rem 0 0.75rem;
+  }
+
+  p {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.75;
+    margin-bottom: 1rem;
+  }
+
+  .steps {
+    margin: 1rem 0 1.5rem 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: steps;
+  }
+
+  .steps li {
+    counter-increment: steps;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 15px;
+    color: #444;
+    line-height: 1.6;
+  }
+
+  .steps li::before {
+    content: counter(steps);
+    background: #1A2744;
+    color: #F7F5F0;
+    font-size: 12px;
+    font-weight: bold;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 1.5rem;
+    font-size: 14px;
+  }
+
+  .data-table th {
+    text-align: left;
+    padding: 0.6rem 0.75rem;
+    background: #1A2744;
+    color: #F7F5F0;
+    font-weight: normal;
+    letter-spacing: 0.03em;
+  }
+
+  .data-table td {
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid #DDD9D0;
+    color: #444;
+    vertical-align: top;
+  }
+
+  .data-table tr:last-child td { border-bottom: none; }
+  .data-table tr:nth-child(even) td { background: #F0EDE6; }
+
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+  }
+
+  .badge-deleted { background: #d1fae5; color: #065f46; }
+  .badge-retained { background: #fef3c7; color: #92400e; }
+
+  a { color: #1A2744; }
+
+  footer {
+    background: #111827;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  footer p {
+    font-size: 12px;
+    color: #6B7280;
+    margin: 0;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .footer-links a {
+    font-size: 12px;
+    color: #6B7280;
+    text-decoration: none;
+  }
+
+  .footer-links a:hover { color: #9CA3AF; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo"><a href="index.html"><img src="Athena_Lexi_Studios_logo.png" alt="Athena Lexi Studios"></a></div>
+  <a href="index.html" class="nav-back">← Back to home</a>
+</nav>
+
+<div class="page-header">
+  <p>BragSheet &nbsp;·&nbsp; Athena Lexi Studios</p>
+  <h1>Data Deletion</h1>
+</div>
+
+<div class="content">
+  <p class="subtitle">How to delete your BragSheet data &nbsp;·&nbsp; Applies to: BragSheet (Android, iOS)</p>
+
+  <p>BragSheet stores all your data locally on your device — there are no user accounts and no servers holding your information. You can delete everything at any time using the steps below.</p>
+
+  <h2>How to delete your data on Android</h2>
+  <ol class="steps">
+    <li>Open your device <strong>Settings</strong></li>
+    <li>Tap <strong>Apps</strong> (or Application Manager)</li>
+    <li>Find and tap <strong>BragSheet</strong></li>
+    <li>Tap <strong>Storage</strong></li>
+    <li>Tap <strong>Clear Data</strong> — this permanently deletes all brag sheets, answers, audio recordings, and settings stored by the app</li>
+  </ol>
+
+  <p>Alternatively, <strong>uninstalling BragSheet</strong> removes all locally stored data from your device.</p>
+
+  <h2>What data is deleted and what is retained</h2>
+
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Data type</th>
+        <th>Outcome</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Brag sheets &amp; answers</td>
+        <td><span class="badge badge-deleted">Deleted</span></td>
+        <td>Permanently removed from your device immediately</td>
+      </tr>
+      <tr>
+        <td>Audio recordings</td>
+        <td><span class="badge badge-deleted">Deleted</span></td>
+        <td>Permanently removed from your device immediately</td>
+      </tr>
+      <tr>
+        <td>App settings</td>
+        <td><span class="badge badge-deleted">Deleted</span></td>
+        <td>Permanently removed from your device immediately</td>
+      </tr>
+      <tr>
+        <td>Anonymous analytics events</td>
+        <td><span class="badge badge-retained">Retained (anonymous)</span></td>
+        <td>If you opted into telemetry, anonymous usage events were sent to PostHog. These events contain no personal information and cannot be linked to you. They are retained for up to 12 months per PostHog's data retention policy.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Questions</h2>
+  <p>If you have questions about your data or this process, contact us at:<br>
+  <span class="email-reveal" onmouseenter="revealEmail(this)" ontouchstart="revealEmail(this)"
+    data-user="hello" data-domain="athenalexiventures.com"
+    style="color: #1A2744; border-bottom: 1px solid #aaa; padding-bottom: 1px; cursor: pointer;">
+    Hover to reveal email
+  </span></p>
+  <p>Athena Lexi Ventures &nbsp;·&nbsp; San Francisco Bay Area, California</p>
+</div>
+
+<script>
+function revealEmail(el) {
+  var user = el.getAttribute('data-user');
+  var domain = el.getAttribute('data-domain');
+  var email = user + '@' + domain;
+  var link = document.createElement('a');
+  link.href = 'mailto:' + email;
+  link.textContent = email;
+  link.style.color = '#1A2744';
+  el.parentNode.replaceChild(link, el);
+}
+</script>
+
+<footer>
+  <p>© 2025 Athena Lexi Studios &nbsp;·&nbsp; Athena Lexi Ventures &nbsp;·&nbsp; Bay Area, CA</p>
+  <div class="footer-links">
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms-of-use.html">Terms of Use</a>
+  </div>
+</footer>
+
+</body>
+</html>
